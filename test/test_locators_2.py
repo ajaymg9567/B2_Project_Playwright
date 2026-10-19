@@ -66,11 +66,12 @@ from playwright.async_api import expect
 # https://www.amazon.in/s?k=Mobiles&crid=1TYT1N5RZWSVB&sprefix=mob%2Caps%2C1615&ref=nb_sb_noss_2
 # xpath
 
-@pytest.mark.asyncio
-async def test_getBytitle(async_page):
-    await async_page.goto("https://www.amazon.in/s?k=Mobiles&crid=1TYT1N5RZWSVB&sprefix=mob%2Caps%2C1615&ref=nb_sb_noss_2")
-    ele = async_page.locator('(//input[@aria-label="Samsung"])[2]')
+# @pytest.mark.asyncio
+# async def test_getBytitle(async_page):
+#     await async_page.goto("https://www.amazon.in/s?k=Mobiles&crid=1TYT1N5RZWSVB&sprefix=mob%2Caps%2C1615&ref=nb_sb_noss_2")
+#     ele = async_page.locator('(//input[@aria-label="Samsung"])[2]')
 
+#################################################################
 #Xpath
 #//a[text()='Build your own expensive computer']/ancestor::div[1]//input[@value='Add to cart']
 #(//a[text()='Kotak Mahindra'])[2]/parent::td/following-sibling::td[1]
@@ -80,4 +81,7 @@ async def test_getBytitle(async_page):
 # //section[@class='category-section']//div[@role="heading"]
 # //div[@id='ui-datepicker-div']//th
 #//input[@id='txtUserName' or @id='txtPassword']
-//table[@class='ws-table-all']/descendant::tr[position()>5]/td[3]|//th[text()='Country']
+#//table[@class='ws-table-all']/descendant::tr[position()>5]/td[3]|//th[text()='Country']
+
+##################################################################
+
